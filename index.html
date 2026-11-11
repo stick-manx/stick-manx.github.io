@@ -47,7 +47,7 @@ p { margin: 0; }
 .alt { color: var(--gold); font-weight: 800; }
 .status { min-height: 1.5em; margin-top: 10px; font-weight: 600; color: #ffe7a8; }
 .hero-shot { align-self: end; }
-.hero-shot img { display: block; width: 100%; border-radius: 12px 12px 0 0; border: 4px solid #0d0908; border-bottom: 0; }
+.hero-shot img { display: block; width: 100%; height: auto; border-radius: 12px 12px 0 0; border: 4px solid #0d0908; border-bottom: 0; }
 
 section { padding-block: 48px; }
 section h2 { font-size: 32px; color: var(--gold); }
@@ -73,7 +73,7 @@ code { font-family: ui-monospace, Menlo, Consolas, monospace; background: #0d090
 /* chapters */
 .chapters { margin-top: 22px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .chapter { display: grid; grid-template-columns: 180px 1fr; gap: 14px; align-items: center; min-width: 0; }
-.chapter img { width: 100%; border-radius: 8px; border: 2px solid #3a2e2a; }
+.chapter img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; border: 2px solid #3a2e2a; }
 .chapter .ch { font-weight: 800; font-size: 12px; letter-spacing: 1.5px; color: var(--ember); text-transform: uppercase; }
 .chapter h3 { font-size: 22px; }
 .chapter p { color: var(--muted); font-size: 14px; }
@@ -156,8 +156,8 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space
       <p class="intro">Every chapter starts with an animated cutscene. The Elder tells the story and can read it aloud.</p>
       <div class="chapters">
         <div class="chapter"><img src="shot_cut.jpg" alt="The Elder telling the story while red raiders attack" width="640" height="480" loading="lazy"><div><span class="ch">Chapter 1</span><h3>The First Gold</h3><p>Raiders attack your miners. Learn to mine and train Swordwrath.</p></div></div>
-        <div class="chapter"><img src="shot_levels.jpg" alt="Chapter select screen" width="640" height="480" loading="lazy"><div><span class="ch">Chapter 2</span><h3>Arrows from the Hills</h3><p>The Archidon archers join your side.</p></div></div>
-        <div class="chapter"><img src="shot_battle.jpg" alt="Battle screen with unit buttons" width="640" height="480" loading="lazy"><div><span class="ch">Chapter 3</span><h3>The Shield Wall</h3><p>Speartons hold the line against enemy arrows.</p></div></div>
+        <div class="chapter"><img src="shot_ch2.jpg" alt="An Archidon archer shooting a Crimson raider" width="640" height="480" loading="lazy"><div><span class="ch">Chapter 2</span><h3>Arrows from the Hills</h3><p>The Archidon archers join your side.</p></div></div>
+        <div class="chapter"><img src="shot_ch3.jpg" alt="Speartons blocking enemy arrows with their shields" width="640" height="480" loading="lazy"><div><span class="ch">Chapter 3</span><h3>The Shield Wall</h3><p>Speartons hold the line against enemy arrows.</p></div></div>
         <div class="chapter"><img src="shot_cut4.jpg" alt="Chapter 4 title card with a red giant arriving" width="640" height="480" loading="lazy"><div><span class="ch">Chapter 4</span><h3>Rise of the Giants</h3><p>The final battle. Win it to see the ending.</p></div></div>
       </div>
     </div>
