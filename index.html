@@ -95,6 +95,18 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space
 .trailer video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
 .watch { color: #fff; font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--gold); }
 
+/* versions */
+.versions { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 12px; }
+.ver { display: grid; grid-template-columns: 1fr auto; gap: 8px 20px; align-items: center; background: var(--panel); border-radius: 12px; padding: 16px 18px; min-width: 0; }
+.ver h3 { font-size: 22px; color: #fff; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.ver .badge { font-family: var(--body); font-size: 11px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; background: var(--gold); color: var(--earth); }
+.ver .badge.old { background: #4a3d36; color: var(--muted); }
+.ver .date { color: var(--ember); font-weight: 800; font-size: 13px; letter-spacing: .5px; }
+.ver p { color: var(--muted); font-size: 14px; margin-top: 4px; }
+.vbtn { font-family: var(--display); font-size: 17px; color: #fff; text-decoration: none; background: #3a2e2a; border: 2px solid var(--gold); border-radius: 10px; padding: 8px 16px; white-space: nowrap; }
+.vbtn:hover { background: #4a3a34; }
+@media (max-width: 560px) { .ver { grid-template-columns: 1fr; } .vbtn { justify-self: start; } }
+
 @media (max-width: 820px) {
   .hero .wrap { grid-template-columns: 1fr; }
   .steps, .steps.three, .units { grid-template-columns: repeat(2, 1fr); }
@@ -197,6 +209,27 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space
           <dt>Space</dt><dd>Next story line</dd>
         </dl></div>
       </div>
+    </div>
+  </section>
+
+  <section id="versions">
+    <div class="wrap">
+      <h2>All versions</h2>
+      <p class="intro">Every version of Stick Legions stays here, so you can always play an older one. Open it in Scratch the same way.</p>
+      <ul class="versions">
+        <li class="ver">
+          <div><h3>Version 1.0 <span class="badge">Latest</span></h3>
+            <span class="date">10 November 2026</span>
+            <p>Main menu, settings (music, narrator voice, touch or PC keys), 4-chapter campaign with animated cutscenes told by the Elder, Quick Battle, music.</p></div>
+          <a class="vbtn" href="versions/Stick_Legions_V1.0.sb3" download>Download V1.0</a>
+        </li>
+        <li class="ver">
+          <div><h3>Beta 0.9 <span class="badge old">Old</span></h3>
+            <span class="date">9 November 2026</span>
+            <p>The very first version: one battle against the Crimson Clan with miners, Swordwrath, Archidon, Spearton and Giants. No menu, campaign or music yet.</p></div>
+          <a class="vbtn" href="versions/Stick_Legions_Beta_0.9.sb3" download>Download Beta 0.9</a>
+        </li>
+      </ul>
     </div>
   </section>
 </main>
