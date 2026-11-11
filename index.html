@@ -88,7 +88,10 @@ code { font-family: ui-monospace, Menlo, Consolas, monospace; background: #0d090
 .ctrl dd { margin: 0; color: var(--muted); }
 
 footer { border-top: 1px solid #3a2e2a; padding-block: 24px 36px; color: var(--muted); font-size: 14px; }
-footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
+footer .foot { display: grid; gap: 14px; }
+.foot-support, .foot-row { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; }
+.foot-support { justify-content: flex-start; }
+.foot-links a { color: var(--gold); }
 
 /* trailer */
 .trailer { background: #0d0908; }
@@ -111,6 +114,12 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space
 .btn.play { background: linear-gradient(180deg, #ff9a1f, #d96b00); box-shadow: 0 5px 0 #6b3400; text-decoration: none; }
 .btn.play:active { box-shadow: 0 2px 0 #6b3400; }
 a.btn { text-decoration: none; }
+
+/* support */
+.support { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; color: #fff; text-decoration: none;
+  background: #c2185b; border: 2px solid var(--gold); border-radius: 999px; padding: 6px 14px; }
+.support:hover { filter: brightness(1.1); }
+.support-note { color: var(--muted); font-size: 13px; }
 
 @media (max-width: 820px) {
   .hero .wrap { grid-template-columns: 1fr; }
@@ -254,7 +263,12 @@ a.btn { text-decoration: none; }
   </section>
 </main>
 
-<footer><div class="wrap"><span>Stick Legions V1.1 · made by akami</span><span>A fan-made Scratch game</span><span><a href="links.html" style="color:var(--gold)">Links</a> · <a href="https://scratch.mit.edu/" target="_blank" rel="noopener" style="color:var(--gold)">Scratch</a> · <a href="roblox_user_2000.html" style="color:var(--gold)">Roblox_User_2000</a></span></div></footer>
+<footer><div class="wrap foot">
+  <div class="foot-support"><a class="support" href="https://scratch.mit.edu/projects/1438659725" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21 C5 15 2 12 2 8 a5 5 0 0 1 10 -2 a5 5 0 0 1 10 2 c0 4 -3 7 -10 13 Z" fill="#fff"/></svg>Support akami</a>
+    <span class="support-note">Love, favorite and share Stick Legions on Scratch</span></div>
+  <div class="foot-row"><span>Stick Legions V1.1 · made by akami · a fan-made Scratch game</span>
+    <span class="foot-links"><a href="links.html">Links</a> · <a href="https://scratch.mit.edu/" target="_blank" rel="noopener">Scratch</a> · <a href="roblox_user_2000.html">Roblox_User_2000</a></span></div>
+</div></footer>
 
 </body>
 </html>
