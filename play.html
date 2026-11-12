@@ -140,7 +140,7 @@
     .sc-monitor-row-value-editing .sc-monitor-row-value-outer {
       background-color: #e25b27;
     }
-    
+    #app{top:40px!important;height:calc(100% - 40px)!important}body.is-fullscreen #app{top:0!important;height:100%!important}body.is-fullscreen #smbar{display:none}
   </style>
   <meta name="theme-color" content="#120e1a">
   
@@ -461,5 +461,5 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     };
     run().catch(handleError);
   </script>
-<a href="index.html" style="position:fixed;top:6px;left:6px;z-index:10;background:rgba(0,0,0,.55);color:#ffcf3f;font:bold 14px sans-serif;padding:6px 10px;border-radius:8px;text-decoration:none">&larr; Stick Manx</a></body>
+<div id="smbar" style="position:fixed;top:0;left:0;right:0;height:40px;z-index:10;background:#1d1a26;border-bottom:2px solid #ffcf3f;display:flex;align-items:center;gap:12px;padding:0 10px;font:bold 15px sans-serif;box-sizing:border-box"><a href="index.html" style="color:#120e1a;background:#ffcf3f;text-decoration:none;padding:5px 12px;border-radius:8px">&larr; Stick Manx</a><span style="color:#fff">Stick Legions</span></div></body>
 </html>
