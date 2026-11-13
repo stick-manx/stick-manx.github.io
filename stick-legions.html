@@ -109,6 +109,10 @@ footer .foot { display: grid; gap: 14px; }
 .ver p { color: var(--muted); font-size: 14px; margin-top: 4px; }
 .vbtn { font-family: var(--display); font-size: 17px; color: #fff; text-decoration: none; background: #3a2e2a; border: 2px solid var(--gold); border-radius: 10px; padding: 8px 16px; white-space: nowrap; }
 .vbtn:hover { background: #4a3a34; }
+.ver.soon { background: transparent; border: 2px dashed #4a3d36; }
+.ver .badge.next { background: var(--ember); color: #fff; }
+.vbtn.off { border-color: #4a3d36; color: var(--muted); background: transparent; cursor: default; }
+.vbtn.off:hover { background: transparent; }
 @media (max-width: 560px) { .ver { grid-template-columns: 1fr; } .vbtn { justify-self: start; } }
 
 .btn.play { background: linear-gradient(180deg, #ff9a1f, #d96b00); box-shadow: 0 5px 0 #6b3400; text-decoration: none; }
@@ -294,6 +298,10 @@ a.btn { text-decoration: none; }
       <h2>All versions</h2>
       <p class="intro">Every version of Stick Legions stays here, so you can always play an older one. Open it in Scratch the same way.</p>
       <ul class="versions">
+        <li class="ver soon">
+          <div><h3>Version 1.5 <span class="badge next">Coming soon</span></h3></div>
+          <span class="vbtn off" aria-disabled="true">Coming soon</span>
+        </li>
         <li class="ver">
           <div><h3>Version 1.4 <span class="badge">Latest</span></h3>
             <span class="date">12 November 2026</span>
